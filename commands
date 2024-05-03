@@ -1,1 +1,7 @@
 protoc -Igreet/proto --go_out=. --go_opt=module=microservice_grpc --go-grpc_out=. --go-grpc_opt=module=microservice_grpc greet/proto/dummy.proto
+
+chmod +x ssl.sh
+./ssl.sh
+
+
+https://github.com/ktr0731/evans - CLI gRPC client. Помогает тестировать gRPC сервисы (контроллеры) через консольную команду
